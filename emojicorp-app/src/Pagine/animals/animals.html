@@ -1,0 +1,14 @@
+<h2 class="mb-4">Sezione Animali 🐾</h2>
+
+<div class="row">
+  @for (item of animals; track item.name) {
+    <div class="col-12 col-md-4 col-lg-3 mb-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <div class="display-1 mb-2">{{ item.emoji }}</div>
+          <h5 class="card-title">{{ item.name }}</h5>
+        </div>
+      </div>
+    </div>
+  }
+</div>

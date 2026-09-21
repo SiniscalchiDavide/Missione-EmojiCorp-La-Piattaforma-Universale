@@ -1,1 +1,15 @@
-<p>fruits works!</p>
+<header class="section-heading">
+  <p class="section-kicker">Collezione</p>
+  <h1>Frutta 🍏</h1>
+</header>
+
+<div class="row">
+  @for (item of fruits; track item.name) {
+    <div class="col-12 col-md-4 col-lg-3 mb-4">
+      <div class="emoji-card">
+        <span class="emoji-card__emoji" aria-hidden="true">{{ item.emoji }}</span>
+        <h2 class="emoji-card__name">{{ item.name }}</h2>
+      </div>
+    </div>
+  }
+</div>

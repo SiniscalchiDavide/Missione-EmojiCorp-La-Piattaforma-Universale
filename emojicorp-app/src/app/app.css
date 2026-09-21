@@ -1,9 +1,30 @@
-.active-menu {
-  font-weight: bold;
-  color: #fff !important;
-  border-bottom: 2px solid #0d6efd;
+.site-nav {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
 }
 
-.nav-link {
-  cursor: pointer;
+.site-nav__brand {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.site-nav__brand:hover {
+  color: var(--accent);
+}
+
+.site-nav__links {
+  gap: 0.35rem;
+}
+
+.site-nav .nav-link {
+  border-radius: 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active-menu {
+  background: var(--accent-soft);
+  color: var(--accent);
 }

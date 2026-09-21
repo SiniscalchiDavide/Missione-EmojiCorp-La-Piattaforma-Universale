@@ -1,13 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg site-nav">
   <div class="container">
-    <a class="navbar-brand" href="#">🚀 EmojiCorp</a>
-    <div class="navbar-nav">
-      <!-- Usiamo routerLink e routerLinkActive come indicato nella Fase 2 -->
-      <a class="nav-link" routerLink="/animals" routerLinkActive="active-menu">Animali 🦁</a>
-      <a class="nav-link" routerLink="/fruits" routerLinkActive="active-menu">Frutta 🍎</a>
+    <a class="navbar-brand site-nav__brand" routerLink="/">🚀 EmojiCorp</a>
+    <div class="navbar-nav site-nav__links">
+      <a class="nav-link" routerLink="/animals" routerLinkActive="active-menu">Animali</a>
+      <a class="nav-link" routerLink="/fruits" routerLinkActive="active-menu">Frutta</a>
     </div>
   </div>
 </nav>
 
-
-<router-outlet></router-outlet>
+<main class="page-shell">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>

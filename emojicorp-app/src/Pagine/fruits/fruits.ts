@@ -1,9 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-fruits',
-  styleUrl: './fruits.css',
+  standalone: true,
+  imports: [],
   templateUrl: './fruits.html',
+  styleUrl: './fruits.css'
 })
-export class Fruits {}
+export class Fruits {
+  fruits = [
+    { name: 'Mela', emoji: '🍎' },
+    { name: 'Banana', emoji: '🍌' },
+    { name: 'Fragola', emoji: '🍓' },
+    { name: 'Anguria', emoji: '🍉' },
+    { name: 'Limone', emoji: '🍋' }
+  ];
+}

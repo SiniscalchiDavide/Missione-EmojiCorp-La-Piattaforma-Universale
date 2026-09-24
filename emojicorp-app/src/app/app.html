@@ -4,6 +4,8 @@
     <div class="navbar-nav site-nav__links">
       <a class="nav-link" routerLink="/animals" routerLinkActive="active-menu">Animali</a>
       <a class="nav-link" routerLink="/fruits" routerLinkActive="active-menu">Frutta</a>
+      <a class="nav-link" [routerLink]="['/generic', 'food']" routerLinkActive="active-menu">Cibo</a>
+      <a class="nav-link" [routerLink]="['/generic', 'vehicles']" routerLinkActive="active-menu">Veicoli</a>
     </div>
   </div>
 </nav>

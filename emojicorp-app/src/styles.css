@@ -6,8 +6,8 @@
   --surface: #ffffff;
   --page: #f6f8f7;
   --line: #e4ebe8;
-  --accent: #e27a3f;
-  --accent-soft: #fff0e7;
+  --accent: #22c55e;
+  --accent-soft: rgba(34, 197, 94, 0.1);
 }
 
 * {
@@ -52,12 +52,14 @@ body {
   border-radius: 0.85rem;
   background: var(--surface);
   text-align: center;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .emoji-card:hover {
-  border-color: #f0b08b;
+  border-color: #86efac;
   transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
 }
 
 .emoji-card__emoji {

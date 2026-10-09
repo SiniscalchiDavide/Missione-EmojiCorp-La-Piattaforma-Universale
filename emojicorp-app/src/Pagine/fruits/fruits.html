@@ -4,9 +4,12 @@
 </header>
 
 <div class="row">
-  @for (item of fruits; track item.name) {
+  @for (item of fruits; track item.name; let isFirst = $first) {
     <div class="col-12 col-md-4 col-lg-3 mb-4">
       <div class="emoji-card">
+        @if (isFirst) {
+          <span class="badge-featured">In evidenza</span>
+        }
         <span class="emoji-card__emoji" aria-hidden="true">{{ item.emoji }}</span>
         <h2 class="emoji-card__name">{{ item.name }}</h2>
       </div>

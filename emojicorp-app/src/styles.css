@@ -76,3 +76,24 @@ body {
   font-size: 1rem;
   font-weight: 600;
 }
+
+/* Posizionamento relativo necessario per ancorare il badge */
+.emoji-card {
+  position: relative;
+}
+
+/* Stile del badge "In evidenza" */
+.badge-featured {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #22c55e; /* Colore accent del tema */
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.35rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

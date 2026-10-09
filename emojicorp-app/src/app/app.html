@@ -1,11 +1,21 @@
 <nav class="navbar navbar-expand-lg site-nav">
   <div class="container">
     <a class="navbar-brand site-nav__brand" routerLink="/">🚀 EmojiCorp</a>
-    <div class="navbar-nav site-nav__links">
-      <a class="nav-link" routerLink="/animals" routerLinkActive="active-menu">Animali</a>
-      <a class="nav-link" routerLink="/fruits" routerLinkActive="active-menu">Frutta</a>
-      <a class="nav-link" [routerLink]="['/generic', 'food']" routerLinkActive="active-menu">Cibo</a>
-      <a class="nav-link" [routerLink]="['/generic', 'vehicles']" routerLinkActive="active-menu">Veicoli</a>
+    <button
+      class="site-nav__toggle"
+      type="button"
+      aria-controls="site-navigation"
+      [attr.aria-expanded]="isMenuOpen()"
+      (click)="toggleMenu()"
+    >
+      <span class="site-nav__toggle-icon" aria-hidden="true">☰</span>
+      <span>Menu</span>
+    </button>
+    <div id="site-navigation" class="navbar-nav site-nav__links" [class.site-nav__links--open]="isMenuOpen()">
+      <a class="nav-link" routerLink="/animals" routerLinkActive="active-menu" (click)="closeMenu()">Animali</a>
+      <a class="nav-link" routerLink="/fruits" routerLinkActive="active-menu" (click)="closeMenu()">Frutta</a>
+      <a class="nav-link" [routerLink]="['/generic', 'food']" routerLinkActive="active-menu" (click)="closeMenu()">Cibo</a>
+      <a class="nav-link" [routerLink]="['/generic', 'vehicles']" routerLinkActive="active-menu" (click)="closeMenu()">Veicoli</a>
     </div>
   </div>
 </nav>

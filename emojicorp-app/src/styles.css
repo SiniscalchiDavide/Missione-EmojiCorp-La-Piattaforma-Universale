@@ -23,7 +23,7 @@ body {
 }
 
 .page-shell {
-  padding: 3rem 0;
+  padding: clamp(1.5rem, 5vw, 3rem) 0;
 }
 
 .section-heading {
@@ -75,20 +75,4 @@ body {
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
-}
-
-/*Trasformail navbar orizzontale in una barra laterale(da telefono e/o tablet)*/
-@media (max-width: 991px) {
-  .navbar-nav.site-nav__links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: var(--surface, #ffffff);
-    flex-direction: column !important;
-    padding: 60px 20px 20px 20px;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    z-index: 1050;
-  }
 }
